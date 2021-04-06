@@ -9,18 +9,18 @@ a {
 }
 
 .inner {
-  width: 1100px;
   display: inline; 
   text-align: center;
+  width: 1100px;
 }
 
 /* ヘッダー部分 */
 .header-wrapper {
   background: #fff;
-  position: fixed;
-  top: 0; 
-  width: 100%; 
   padding: 15px 0;
+  position: fixed;
+  width: 100%; 
+  z-index:100;
 }
 
 .header-container {
@@ -30,7 +30,7 @@ a {
 }
 
 .fa-bolt {
-  font-size: 20px; 
+  font-size: 40px; 
 }
 
 .contact {
@@ -45,7 +45,7 @@ a {
 /* メイン部分 */
 .theme-wrapper {
   background: #f2f2f2;
-  padding: 250px 0;
+  padding: 305px 0 250px;
   width: 100%; 
 }
 
@@ -83,23 +83,27 @@ a {
   text-align: center;
 }
 
-.can-do-title {
+.title-font {
+  font-family: Raleway;
   font-size: 24px;
+}
+
+.can-do-title {
   margin-bottom: 35px;
 }
 
 .can-do-text {
   font-size: 20px;
+  line-height: 30px;
 }
 
 .work-wrapper {
-  width: 100%;
   background: #f2f2f2;
   padding: 60px 0 70px;
+  width: 100%;
 }
 
 .work-title {
-  font-size: 24px;
   padding-bottom: 40px;
 }
 
@@ -108,9 +112,9 @@ a {
 }
 
 .work-picture {
-  opacity: 0.7;
-  margin-right: 100px; 
   display: inline-block;
+  margin-right: 100px; 
+  opacity: 0.7;
 }
 
 .work-picture:nth-child(3n){
@@ -121,32 +125,36 @@ a {
   margin-bottom: 80px;
 }
 
-.work-picture:nth-child(n+4):nth-child(-n+6) {
-  margin-bottom: 90px;
+.work-text-container {
+  margin-top: 90px;
 }
 
-.work-text-container {
-  display: flex;
-  justify-content: center;
+.work-text {
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: middle
 }
 
 .email {
-  font-size: 12px; 
-  padding: 14px 20px;
-  color: white;
   background: #74cfae;
+  color: white;
   display: inline-block;
+  font-size: 12px; 
   margin-left: 90px;
+  padding: 14px 20px;
+  vertical-align: middle
 }
 
 .skill-wrapper {
-  width: 100%;
   background: #4e4e4e;
+  width: 100%;
+  padding: 70px 0 100px;
 }
 
 .skill-text {
   color: white; 
-  padding: 70px 0 50px;
+  margin-bottom: 50px;
+  font-size: 24px;
 }
 
 .circle-picture-all {
@@ -161,14 +169,14 @@ a {
 .circle-picture-text {
   color: white;
   font-size: 16px;
-  margin: 15px 0 100px;
+  margin-top: 15px;
 }
 
 .nav-wrapper {
   background: #f2f2f2;
-  width: 100%;
   padding: 200px 0;
   text-align: center;
+  width: 100%;
 }
 
 .sns-container {
@@ -176,23 +184,23 @@ a {
 }
 
 .sns-icon {
-  width: 185px;
-  font-size: 40px;
-  color: #74cfae;
   box-sizing: border-box;
+  color: #74cfae;
+  font-size: 40px;
   padding: 30px;
+  width: 185px;
 }
 /* メイン部分 */
 
 /* フッター部分 */
 .footer-wrapper {
-  width: 100%; 
   background: #74cfae;
+  width: 100%; 
 }
 
 .footer-inner {
   text-align: right;
-  margin-right: 100px;
+  width: 1100px;
 }
 
 .footer-text {
