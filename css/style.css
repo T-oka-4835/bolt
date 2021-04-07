@@ -9,8 +9,6 @@ a {
 }
 
 .inner {
-  display: inline; 
-  text-align: center;
   width: 1100px;
 }
 
@@ -24,8 +22,8 @@ a {
 }
 
 .header-container {
-  align-items: center;
   display: flex;
+  margin: 0 auto;
   justify-content: space-around;
 }
 
@@ -58,11 +56,13 @@ a {
   font-size: 90px; 
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: center; 
 }
 
 .theme-text {
   color: #c0c0c0; 
-  font-size: 30px; 
+  font-size: 30px;
+  text-align: center; 
 }
 
 .can-do-wrapper {
@@ -76,7 +76,6 @@ a {
   justify-content: space-around;
   margin: 0 auto;
   padding-top: 50px;
-  width: 1100px;
 }
 
 .can-do-section {
@@ -103,12 +102,17 @@ a {
   width: 100%;
 }
 
+.work-inner {
+  margin: 0 auto;
+}
+
 .work-title {
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .picture-container {
-  display: inline-block;
+  font-size: 0;
 }
 
 .work-picture {
@@ -127,6 +131,7 @@ a {
 
 .work-text-container {
   margin-top: 90px;
+  text-align: center;
 }
 
 .work-text {
@@ -151,15 +156,24 @@ a {
   padding: 70px 0 100px;
 }
 
+.skill-inner {
+  margin: 0 auto;
+}
+
 .skill-text {
   color: white; 
-  margin-bottom: 50px;
   font-size: 24px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .circle-picture-all {
   display: flex;
   justify-content: center;
+}
+
+.circle-picture-text {
+  text-align: center;
 }
 
 .circle-picture-container:nth-child(-n+3) {
