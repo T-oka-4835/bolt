@@ -2,6 +2,7 @@
 
 body {
   color: #333;
+  font-family: Lato;
 }
 
 a {
@@ -9,7 +10,16 @@ a {
 }
 
 .inner {
+  margin: 0 auto;
   width: 1100px;
+}
+
+main {
+  padding-top: 70px;
+}
+
+img {
+  vertical-align: top;
 }
 
 /* ヘッダー部分 */
@@ -26,9 +36,8 @@ a {
 
 .header-container {
   display: flex;
-  margin: 0 auto;
   padding: 15px 0;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .fa-bolt {
@@ -51,8 +60,7 @@ a {
 }
 
 .theme-container {
-  margin: 0 auto;
-  padding: 305px 0 250px;
+  padding: 250px 0;
 }
 
 .theme-title {
@@ -78,7 +86,6 @@ a {
   color: white; 
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
   padding-top: 50px;
 }
 
@@ -103,28 +110,27 @@ a {
 }
 
 .work-container {
-  margin: 0 auto;
   padding: 60px 0 70px;
 }
 
 .work-title {
-  padding-bottom: 40px;
   text-align: center;
 }
 
 .picture-container {
   font-size: 0;
+  padding-top: 40px;
 }
 
 .work-picture {
   display: inline-block;
-  margin-right: 100px; 
+  margin-left: 100px; 
   opacity: 0.7;
   transition: 0.3s all;
 }
 
-.work-picture:nth-child(3n){
-  margin-right: 0; 
+.work-picture:nth-child(3n + 1){
+  margin-left: 0; 
 }
 
 .work-picture:nth-child(n+4):nth-child(-n+6) {
@@ -162,7 +168,6 @@ a {
 }
 
 .skill-container {
-  margin: 0 auto;
   padding: 70px 0 100px;
 }
 
@@ -182,8 +187,12 @@ a {
   text-align: center;
 }
 
-.circle-picture-container:nth-child(-n+3) {
-  margin-right: 180px;
+.circle-picture-container {
+  margin-left: 180px;
+}
+
+.circle-picture-container:first-child {
+  margin-left: 0;
 }
 
 .circle-picture-text {
@@ -199,7 +208,6 @@ a {
 }
 
 .sns-container {
-  display: inline-block;
   padding: 200px 0;
 }
 
@@ -220,13 +228,13 @@ a {
 }
 
 .footer-container {
+  padding: 20px 0 25px;
   text-align: right;
   width: 1100px;
 }
 
 .footer-text {
   color: white;
-  padding: 20px 0 25px;
 }
 /* フッター部分 */
 
