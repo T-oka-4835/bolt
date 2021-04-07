@@ -129,7 +129,7 @@ img {
 
 .work-picture {
   display: inline-block;
-  margin-left: 100px; 
+  margin: 80px 0 0 100px; 
   opacity: 0.7;
   transition: 0.3s all;
 }
@@ -138,8 +138,8 @@ img {
   margin-left: 0; 
 }
 
-.work-picture:nth-child(n+4):nth-child(-n+6) {
-  margin-top: 80px;
+.work-picture:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 .work-text-container {
@@ -215,12 +215,14 @@ img {
 
 .sns-container {
   padding: 200px 0;
+  display: flex;
+  justify-content: center; 
 }
 
 .sns-icon {
   box-sizing: border-box;
   color: #74cfae;
-  font-size: 40px;
+  font-size: 50px;
   padding: 30px;
   transition: 0.3s;
   width: 185px;
