@@ -23,6 +23,10 @@ img {
   vertical-align: bottom;
 }
 
+.title-font {
+  font-family: Raleway;
+}
+
 /* ヘッダー部分 */
 .header-wrapper {
   background: #fff;
@@ -49,11 +53,12 @@ img {
 
 .contact {
   background: #74cfae;
-  color: #FFF;
+  color: #fff;
   display: inline;
   font-size: 12px; 
   padding: 14px 12px;
 }
+
 /* ヘッダー部分 */
 
 /* メイン部分 */
@@ -68,7 +73,6 @@ img {
 
 .theme-title {
   color: #74cfae;
-  font-family: Raleway;
   font-size: 90px; 
   font-weight: 700;
   text-align: center; 
@@ -87,7 +91,7 @@ img {
 }
 
 .can-do-container {
-  color: white; 
+  color: #fff; 
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
@@ -97,8 +101,7 @@ img {
   text-align: center;
 }
 
-.title-font {
-  font-family: Raleway;
+.can-do-heading {
   font-size: 24px;
 }
 
@@ -119,6 +122,7 @@ img {
 }
 
 .work-title {
+  font-size: 24px;
   text-align: center;
 }
 
@@ -160,7 +164,7 @@ img {
 
 .email {
   background: #74cfae;
-  color: white;
+  color: #fff;
   display: inline-block;
   font-size: 12px; 
   margin-left: 90px;
@@ -178,7 +182,7 @@ img {
 }
 
 .skill-text {
-  color: white; 
+  color: #fff; 
   font-size: 24px;
   text-align: center;
 }
@@ -202,7 +206,7 @@ img {
 }
 
 .circle-picture-text {
-  color: white;
+  color: #fff;
   font-size: 16px;
   margin-top: 15px;
 }
@@ -242,7 +246,7 @@ img {
 }
 
 .footer-text {
-  color: white;
+  color: #fff;
 }
 /* フッター部分 */
 
@@ -260,7 +264,7 @@ img {
 }
 
 .sns-icon:hover {
-  background: white;
+  background: #fff;
 }
 /* hoverでの見た目の変化 */
 
@@ -329,6 +333,24 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
 
+  .theme-container {
+    padding: 160px 0 130px;
+  }
+
+  .theme-title {
+    font-size: 80px;
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .theme-text {
+    font-size: 30px;
+    margin: 20px auto 0;
+    width: 300px;
+  }
 
 }
