@@ -62,9 +62,31 @@ img {
 .bar-menu {
   border: 1px solid #ddd;
   border-radius: 4px;
-  color: #ddd;
   display: none;
+  height: 20px; 
   padding: 10px;
+  position: relative;
+  width: 30px; 
+}
+
+.bar-menu > span {
+  background-color: #ddd;
+  display: inline-block;
+  height: 3px;
+  position: absolute;
+  width: 60%;
+}
+
+.bar-menu span:first-child {
+  top: 6; 
+}
+
+.bar-menu span:nth-child(2) {
+  top: 20px; 
+}
+
+.bar-menu span:last-child {
+  top: 30px; 
 }
 
 /* ヘッダー部分 */
@@ -307,8 +329,12 @@ img {
     margin: 0 auto;
   }
 
-  .work-picture:nth-child(4) {
+  .work-picture:nth-child(3n+1) {
     margin-top: 80px;
+  }
+
+  .work-picture:first-child {
+    margin-top: 0;
   }
 
   .work-text-container {
@@ -347,7 +373,7 @@ img {
   }
 
   .bar-menu {
-    display: block;
+    display: inline-block;
   }
 
   .theme-container {
@@ -357,13 +383,13 @@ img {
   .theme-title {
     font-size: 80px;
     margin: 0 auto;
-    width: 250px;
+    width: 40%;
   }
 
   .theme-text {
     font-size: 30px;
     margin: 20px auto 0;
-    width: 300px;
+    width: 50%;
   }
 
   .can-do-text {
@@ -371,7 +397,7 @@ img {
   }
 
   .work-text {
-    width: 270px;
+    width: 40%;
   }
 
   .sns-container {
