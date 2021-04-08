@@ -59,6 +59,14 @@ img {
   padding: 14px 12px;
 }
 
+.bar-menu {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #ddd;
+  display: none;
+  padding: 10px;
+}
+
 /* ヘッダー部分 */
 
 /* メイン部分 */
@@ -310,6 +318,7 @@ img {
   .work-text {
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
 
   .email {
@@ -337,6 +346,10 @@ img {
     display: none;
   }
 
+  .bar-menu {
+    display: block;
+  }
+
   .theme-container {
     padding: 160px 0 130px;
   }
@@ -351,6 +364,25 @@ img {
     font-size: 30px;
     margin: 20px auto 0;
     width: 300px;
+  }
+
+  .can-do-text {
+    width: 298px;
+  }
+
+  .work-text {
+    width: 270px;
+  }
+
+  .sns-container {
+    display: block;
+    padding: 50px 0;
+  }
+
+  .sns-icon {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 70px;
   }
 
 }
