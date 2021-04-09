@@ -164,6 +164,9 @@ img {
 .work-picture {
   display: inline-block;
   margin: 80px 0 0 100px; 
+}
+
+.work-picture > a > img {
   opacity: 0.7;
   transition: 0.3s all;
 }
@@ -289,7 +292,7 @@ img {
   color: #333;
 }
 
-.work-picture:hover {
+.work-picture > a > img:hover {
   opacity: 1;
 }
 
@@ -312,7 +315,7 @@ img {
     text-align: center;
   }
 
-  .can-do-heading {
+  .can-do-section {
     margin-top: 20px;
   }
 
@@ -336,7 +339,7 @@ img {
   .work-picture:first-child {
     margin-top: 0;
   }
-
+  
   .work-text-container {
     margin-top: 80px;
   }
@@ -383,7 +386,6 @@ img {
   .theme-title {
     font-size: 80px;
     margin: 0 auto;
-    width: 40%;
   }
 
   .theme-text {
